@@ -13,7 +13,7 @@
         <link rel="icon" href="https://tansir23.github.io/assets/images/blog_avatar.png">
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"https://tansir23.github.io","author":{"@type":"Person","name":"TanSir","sameAs":["https://twitter.com/","mailto"]},"name":"TanSir的Blog","description":"","url":"https://tansir23.github.io"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"https://tansir23.github.io","author":{"@type":"Person","name":"TanSir","sameAs":["https://twitter.com/","mailto"],"image":"blog_avatar.png"},"name":"TanSir的Blog","description":"","url":"https://tansir23.github.io"}</script>
     <meta property="og:type" content="blog">
 <meta property="og:title" content="all-tags">
 <meta property="og:url" content="https://tansir23.github.io/all-tags/index.html">
@@ -23,10 +23,13 @@
 <meta property="article:modified_time" content="2021-08-23T03:33:31.556Z">
 <meta property="article:author" content="TanSir">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@tansir23">
     
     
         
     
+    
+        <meta property="og:image" content="https://tansir23.github.io/assets/images/blog_avatar.png"/>
     
     
     
@@ -50,6 +53,12 @@
             <!-- Define author's picture -->
 
 
+    
+        
+            
+        
+    
+
 <header id="header" data-behavior="1">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
     <div class="header-title">
@@ -64,13 +73,13 @@
     
         
             <a
-                class="header-right-icon "
+                class="header-right-picture "
                 href="#about"
                 aria-label="Open the link: /#about"
             >
         
         
-            <i class="_images/cover.jpg fa-lg"></i>
+            <img class="header-picture" src="/assets/images/blog_avatar.png" alt="Author&#39;s picture"/>
         
         </a>
     
@@ -79,8 +88,26 @@
             <!-- Define author's picture -->
 
 
+
+        
+    
+
 <nav id="sidebar" data-behavior="1">
     <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a
+                    href="/#about"
+                    aria-label="Read more about the author"
+                >
+                    <img class="sidebar-profile-picture" src="/assets/images/blog_avatar.png" alt="Author&#39;s picture"/>
+                </a>
+                <h4 class="sidebar-profile-name">TanSir</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>author.bio</p>
+</h5>
+                
+            </div>
         
         
             <ul class="sidebar-buttons">
@@ -177,24 +204,6 @@
             
         </ul>
         
-            <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/atom.xml"
-                            
-                            rel="noopener"
-                            title="RSS"
-                        >
-                        <i class="sidebar-button-icon fa fa-rss" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">RSS</span>
-                    </a>
-            </li>
-            
-        </ul>
-        
     </div>
 </nav>
 
@@ -214,6 +223,10 @@
 
         <section>
         
+            <a class="tag tag--primary tag--small" href="#Chengdu-list" data-tag="chengdu">
+                Chengdu
+            </a>
+        
             <a class="tag tag--primary tag--small" href="#chinese-list" data-tag="chinese">
                 chinese
             </a>
@@ -226,24 +239,8 @@
                 dailymotion
             </a>
         
-            <a class="tag tag--primary tag--small" href="#disqus-list" data-tag="disqus">
-                disqus
-            </a>
-        
             <a class="tag tag--primary tag--small" href="#github theme-list" data-tag="github theme">
                 github theme
-            </a>
-        
-            <a class="tag tag--primary tag--small" href="#google analytics-list" data-tag="google analytics">
-                google analytics
-            </a>
-        
-            <a class="tag tag--primary tag--small" href="#gravatar-list" data-tag="gravatar">
-                gravatar
-            </a>
-        
-            <a class="tag tag--primary tag--small" href="#hexo theme-list" data-tag="hexo theme">
-                hexo theme
             </a>
         
             <a class="tag tag--primary tag--small" href="#highlight code-list" data-tag="highlight code">
@@ -266,14 +263,6 @@
                 markdown
             </a>
         
-            <a class="tag tag--primary tag--small" href="#responsive-list" data-tag="responsive">
-                responsive
-            </a>
-        
-            <a class="tag tag--primary tag--small" href="#swiftype-list" data-tag="swiftype">
-                swiftype
-            </a>
-        
             <a class="tag tag--primary tag--small" href="#tag plugins-list" data-tag="tag plugins">
                 tag plugins
             </a>
@@ -292,6 +281,26 @@
         
     </section>
     <section class="boxes">
+        
+            <div id="Chengdu-list" class="archive box" data-tag="chengdu">
+                <h4 class="archive-title">
+                    <a class="link-unstyled" href="/tags/Chengdu">
+                        Chengdu (1)
+                    </a>
+                </h4>
+                <ul class="archive-posts">
+                    
+                        <li class="archive-post">
+                            <a class="archive-post-title" href="/2021/08/23/Welcome-to-my-blog/">
+                                TanSir&#39;s Blog
+                            </a>
+                            <span class="archive-post-date">
+                                 - aug 23, 2021
+                            </span>
+                        </li>
+                    
+                </ul>
+            </div>
         
             <div id="chinese-list" class="archive box" data-tag="chinese">
                 <h4 class="archive-title">
@@ -353,26 +362,6 @@
                 </ul>
             </div>
         
-            <div id="disqus-list" class="archive box" data-tag="disqus">
-                <h4 class="archive-title">
-                    <a class="link-unstyled" href="/tags/disqus">
-                        disqus (1)
-                    </a>
-                </h4>
-                <ul class="archive-posts">
-                    
-                        <li class="archive-post">
-                            <a class="archive-post-title" href="/2015/06/15/Welcome-to-the-new-Tranquilpeak/">
-                                Welcome to Tansir&#39;s Blog
-                            </a>
-                            <span class="archive-post-date">
-                                 - jun 15, 2015
-                            </span>
-                        </li>
-                    
-                </ul>
-            </div>
-        
             <div id="github theme-list" class="archive box" data-tag="github theme">
                 <h4 class="archive-title">
                     <a class="link-unstyled" href="/tags/github-theme">
@@ -387,66 +376,6 @@
                             </a>
                             <span class="archive-post-date">
                                  - mar 23, 2015
-                            </span>
-                        </li>
-                    
-                </ul>
-            </div>
-        
-            <div id="google analytics-list" class="archive box" data-tag="google analytics">
-                <h4 class="archive-title">
-                    <a class="link-unstyled" href="/tags/google-analytics">
-                        google analytics (1)
-                    </a>
-                </h4>
-                <ul class="archive-posts">
-                    
-                        <li class="archive-post">
-                            <a class="archive-post-title" href="/2015/06/15/Welcome-to-the-new-Tranquilpeak/">
-                                Welcome to Tansir&#39;s Blog
-                            </a>
-                            <span class="archive-post-date">
-                                 - jun 15, 2015
-                            </span>
-                        </li>
-                    
-                </ul>
-            </div>
-        
-            <div id="gravatar-list" class="archive box" data-tag="gravatar">
-                <h4 class="archive-title">
-                    <a class="link-unstyled" href="/tags/gravatar">
-                        gravatar (1)
-                    </a>
-                </h4>
-                <ul class="archive-posts">
-                    
-                        <li class="archive-post">
-                            <a class="archive-post-title" href="/2015/06/15/Welcome-to-the-new-Tranquilpeak/">
-                                Welcome to Tansir&#39;s Blog
-                            </a>
-                            <span class="archive-post-date">
-                                 - jun 15, 2015
-                            </span>
-                        </li>
-                    
-                </ul>
-            </div>
-        
-            <div id="hexo theme-list" class="archive box" data-tag="hexo theme">
-                <h4 class="archive-title">
-                    <a class="link-unstyled" href="/tags/hexo-theme">
-                        hexo theme (1)
-                    </a>
-                </h4>
-                <ul class="archive-posts">
-                    
-                        <li class="archive-post">
-                            <a class="archive-post-title" href="/2015/06/15/Welcome-to-the-new-Tranquilpeak/">
-                                Welcome to Tansir&#39;s Blog
-                            </a>
-                            <span class="archive-post-date">
-                                 - jun 15, 2015
                             </span>
                         </li>
                     
@@ -553,46 +482,6 @@
                 </ul>
             </div>
         
-            <div id="responsive-list" class="archive box" data-tag="responsive">
-                <h4 class="archive-title">
-                    <a class="link-unstyled" href="/tags/responsive">
-                        responsive (1)
-                    </a>
-                </h4>
-                <ul class="archive-posts">
-                    
-                        <li class="archive-post">
-                            <a class="archive-post-title" href="/2015/06/15/Welcome-to-the-new-Tranquilpeak/">
-                                Welcome to Tansir&#39;s Blog
-                            </a>
-                            <span class="archive-post-date">
-                                 - jun 15, 2015
-                            </span>
-                        </li>
-                    
-                </ul>
-            </div>
-        
-            <div id="swiftype-list" class="archive box" data-tag="swiftype">
-                <h4 class="archive-title">
-                    <a class="link-unstyled" href="/tags/swiftype">
-                        swiftype (1)
-                    </a>
-                </h4>
-                <ul class="archive-posts">
-                    
-                        <li class="archive-post">
-                            <a class="archive-post-title" href="/2015/06/15/Welcome-to-the-new-Tranquilpeak/">
-                                Welcome to Tansir&#39;s Blog
-                            </a>
-                            <span class="archive-post-date">
-                                 - jun 15, 2015
-                            </span>
-                        </li>
-                    
-                </ul>
-            </div>
-        
             <div id="tag plugins-list" class="archive box" data-tag="tag plugins">
                 <h4 class="archive-title">
                     <a class="link-unstyled" href="/tags/tag-plugins">
@@ -688,11 +577,17 @@
         
 
 
+    
+        
+    
+
 <div id="about">
     <div id="about-card">
         <div id="about-btn-close">
             <i class="fa fa-times"></i>
         </div>
+        
+            <img id="about-card-picture" src="/assets/images/blog_avatar.png" alt="Author&#39;s picture"/>
         
             <h4 id="about-card-name">TanSir</h4>
         
@@ -708,12 +603,18 @@
             </div>
         
         
+            <div id="about-card-location">
+                <i class="fa fa-map-marker-alt"></i>
+                <br/>
+                Chengdu
+            </div>
+        
     </div>
 </div>
 
         
         
-<div id="cover" style="background-image:url('/assets/images/cover-v1.2.0.jpg');"></div>
+<div id="cover" style="background-image:url('/assets/images/cover2.jpg');"></div>
         <!--SCRIPTS-->
 
 <script src="/assets/js/script-hxmooxuzridosyo9bfpxeojrdo9rkpatzdkhka1byae7qlqths6z78mpazqr.min.js"></script>

@@ -13,7 +13,7 @@
         <link rel="icon" href="https://tansir23.github.io/assets/images/blog_avatar.png">
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"https://tansir23.github.io","author":{"@type":"Person","name":"TanSir","sameAs":["https://twitter.com/","mailto"]},"name":"TanSir的Blog","description":"","url":"https://tansir23.github.io"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"https://tansir23.github.io","author":{"@type":"Person","name":"TanSir","sameAs":["https://twitter.com/","mailto"],"image":"blog_avatar.png"},"name":"TanSir的Blog","description":"","url":"https://tansir23.github.io"}</script>
     <meta property="og:type" content="blog">
 <meta property="og:title" content="TanSir的Blog">
 <meta property="og:url" content="https://tansir23.github.io/index.html">
@@ -21,10 +21,13 @@
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="TanSir">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@tansir23">
     
     
         
     
+    
+        <meta property="og:image" content="https://tansir23.github.io/assets/images/blog_avatar.png"/>
     
     
     
@@ -46,6 +49,12 @@
             <!-- Define author's picture -->
 
 
+    
+        
+            
+        
+    
+
 <header id="header" data-behavior="1">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
     <div class="header-title">
@@ -60,13 +69,13 @@
     
         
             <a
-                class="header-right-icon "
+                class="header-right-picture "
                 href="#about"
                 aria-label="Open the link: /#about"
             >
         
         
-            <i class="_images/cover.jpg fa-lg"></i>
+            <img class="header-picture" src="/assets/images/blog_avatar.png" alt="Author&#39;s picture"/>
         
         </a>
     
@@ -75,8 +84,26 @@
             <!-- Define author's picture -->
 
 
+
+        
+    
+
 <nav id="sidebar" data-behavior="1">
     <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a
+                    href="/#about"
+                    aria-label="Read more about the author"
+                >
+                    <img class="sidebar-profile-picture" src="/assets/images/blog_avatar.png" alt="Author&#39;s picture"/>
+                </a>
+                <h4 class="sidebar-profile-name">TanSir</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>author.bio</p>
+</h5>
+                
+            </div>
         
         
             <ul class="sidebar-buttons">
@@ -173,24 +200,6 @@
             
         </ul>
         
-            <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/atom.xml"
-                            
-                            rel="noopener"
-                            title="RSS"
-                        >
-                        <i class="sidebar-button-icon fa fa-rss" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">RSS</span>
-                    </a>
-            </li>
-            
-        </ul>
-        
     </div>
 </nav>
 
@@ -202,7 +211,7 @@
                 <section class="postShorten-group main-content-wrap">
     
     
-    <article class="postShorten postShorten--thumbnailimg-bottom">
+    <article class="postShorten postShorten--thumbnailimg-right">
         <div class="postShorten-wrap">
             
             <div class="postShorten-header">
@@ -210,23 +219,23 @@
                     
                         <a
                             class="link-unstyled"
-                            href="/2015/06/15/Welcome-to-the-new-Tranquilpeak/"
-                            aria-label=": Welcome to Tansir&#39;s Blog"
+                            href="/2021/08/23/Welcome-to-my-blog/"
+                            aria-label=": TanSir&#39;s Blog"
                         >
-                            Welcome to Tansir&#39;s Blog
+                            TanSir&#39;s Blog
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time datetime="2015-06-15T20:30:05+08:00">
+    <time datetime="2021-08-23T20:30:05+08:00">
 	
-		    Jun 15, 2015
+		    Aug 23, 2021
     	
     </time>
     
         <span>in </span>
         
-    <a class="category-link" href="/categories/tranquilpeak/">tranquilpeak</a>, <a class="category-link" href="/categories/tranquilpeak/releases/">releases</a>
+    <a class="category-link" href="/categories/Chengdu/">Chengdu</a>
 
 
     
@@ -235,12 +244,16 @@
             </div>
             
                 <div class="postShorten-excerpt">
-                    <p>Tranquilpeak is a gorgeous responsive theme for Hexo blog framework. It has many features and integrated services to improve user experience.</p>
+                    <img src="https://z3.ax1x.com/2021/08/23/hCdVPJ.jpg" alt="ark_bryggan_big" style="zoom: 25%;" />
+<center>“看看远方，那里有光。”</center>
+<center>(图片引用至Simon Stalenhag的画作)</center>
+
+<hr>
                     
                         <a
-                            href="/2015/06/15/Welcome-to-the-new-Tranquilpeak/"
+                            href="/2021/08/23/Welcome-to-my-blog/"
                             class="postShorten-excerpt_link link"
-                            aria-label=": Welcome to Tansir&#39;s Blog"
+                            aria-label=": TanSir&#39;s Blog"
                         >
                             Continue reading
                         </a>
@@ -249,16 +262,6 @@
                 </div>
             
         </div>
-        
-            <a
-                href="/2015/06/15/Welcome-to-the-new-Tranquilpeak/"
-                aria-label=": Welcome to Tansir&#39;s Blog"
-            >
-                <div class="postShorten-thumbnailimg">
-                    <img alt="" src="http://d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city-750.jpg"/>
-                </div>
-            </a>
-            
         
     </article>
     
@@ -828,11 +831,17 @@
         
 
 
+    
+        
+    
+
 <div id="about">
     <div id="about-card">
         <div id="about-btn-close">
             <i class="fa fa-times"></i>
         </div>
+        
+            <img id="about-card-picture" src="/assets/images/blog_avatar.png" alt="Author&#39;s picture"/>
         
             <h4 id="about-card-name">TanSir</h4>
         
@@ -848,12 +857,18 @@
             </div>
         
         
+            <div id="about-card-location">
+                <i class="fa fa-map-marker-alt"></i>
+                <br/>
+                Chengdu
+            </div>
+        
     </div>
 </div>
 
         
         
-<div id="cover" style="background-image:url('/assets/images/cover-v1.2.0.jpg');"></div>
+<div id="cover" style="background-image:url('/assets/images/cover2.jpg');"></div>
         <!--SCRIPTS-->
 
 <script src="/assets/js/script-hxmooxuzridosyo9bfpxeojrdo9rkpatzdkhka1byae7qlqths6z78mpazqr.min.js"></script>
