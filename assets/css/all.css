@@ -2277,8 +2277,8 @@ readers do not read off random characters that represent icons */
 .fa-id-card-alt:before {
   content: "\f47f"; }
 
-.fa-ideal:before {
-  content: "\e013"; }
+.fa-bilibili:before {
+  content: "\e900"; }
 
 .fa-igloo:before {
   content: "\f7ae"; }
@@ -4562,7 +4562,7 @@ readers do not read off random characters that represent icons */
 
 .fa-zhihu:before {
   content: "\f63f"; }
-
+  
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
