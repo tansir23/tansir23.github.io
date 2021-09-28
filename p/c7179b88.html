@@ -6,25 +6,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="TanSir的Blog">
-    <title>Project YI 开发 (2) - TanSir的Blog</title>
+    <title>迁移Git仓库保留提交记录 - TanSir的Blog</title>
     <meta name="author" content="TanSir">
     
     
         <link rel="icon" href="https://tansir23.github.io/assets/images/blog_avatar.png">
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"TanSir","sameAs":["https://www.twitter.com/XyiGameStudio","https://space.bilibili.com/521783607","mailto:AshLightyear@outlook.com"],"image":"blog_avatar.png"},"articleBody":"“奇怪的人”\n\n\n \n\n奇怪的人得益于Sencer的惊人表现，同时也得益于它烂大街的广告，人们可以从中获得从未有过的“真实”体验。在这个时代，人人都能轻易进入虚拟世界，如同家常便饭，显然那曾经被称为手机的设备已经满足不了人们。Sencer的出现改变了世界，这是设计者梦寐以求的结果，但他们也早已忘记了创造Sencer的初衷，大胆猜想的话，或许设计者早已被替代，谁呢？而被这个设备洗礼过的人们再也不想脱下这个让人上瘾的面具头盔，只是单纯觉得，戴上这个设备的感觉，真好啊。\n","dateCreated":"2021-08-05T20:30:00+08:00","dateModified":"2021-09-26T10:28:19+08:00","datePublished":"2021-08-05T20:30:00+08:00","description":"“奇怪的人”","headline":"Project YI 开发 (2)","image":["https://z3.ax1x.com/2021/08/23/hPFxYj.md.png"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://tansir23.github.io/p/1289e9c0.html"},"publisher":{"@type":"Organization","name":"TanSir","sameAs":["https://www.twitter.com/XyiGameStudio","https://space.bilibili.com/521783607","mailto:AshLightyear@outlook.com"],"image":"blog_avatar.png","logo":{"@type":"ImageObject","url":"blog_avatar.png"}},"url":"https://tansir23.github.io/p/1289e9c0.html","keywords":"Game","thumbnailUrl":"https://z3.ax1x.com/2021/08/23/hPFxYj.md.png"}</script>
-    <meta name="description" content="“奇怪的人”">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"TanSir","sameAs":["https://www.twitter.com/XyiGameStudio","https://space.bilibili.com/521783607","mailto:AshLightyear@outlook.com"],"image":"blog_avatar.png"},"articleBody":"如何迁移你的Git工程又能保留提交记录？\n\n\n为什么要迁移？要不是Gitee有容量限制，以及GC存储库的完全看到时间尽头，也不会折腾这事。但后来想想，随着工程日益剧增的体积，给工程找个新家是个迟早的事，所以赶紧行动起来吧。\nNew House方案Gitlab需要部署在Ubuntu上先放弃了，采用了能够在Windows上部署并且简便易用的Gitblit，由于安装使用简单就不详述。\n迁移着重记录下如何迁移，上命令：\n12345git clone A                  // 拉取A仓库的代码到本地cd AA(文件夹名称)            // 进入代码仓库git branch -r                // 查看远程存储库的根节点名称（一般都是origin）git remote set-url origin B  // 将本地的远程仓库的地址设置为Bgit push --mirror            // 将已经修改远程仓库地址的代码，以镜像的方式推到远程B\ndone 此时原有的A本地的代码仓库已经变成了B的本地代码仓库，以后提交会直接提交至B\nOver","dateCreated":"2021-08-01T18:30:00+08:00","dateModified":"2021-09-26T15:27:45+08:00","datePublished":"2021-08-01T18:30:00+08:00","description":"如何迁移你的Git工程又能保留提交记录？","headline":"迁移Git仓库保留提交记录","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://tansir23.github.io/p/c7179b88.html"},"publisher":{"@type":"Organization","name":"TanSir","sameAs":["https://www.twitter.com/XyiGameStudio","https://space.bilibili.com/521783607","mailto:AshLightyear@outlook.com"],"image":"blog_avatar.png","logo":{"@type":"ImageObject","url":"blog_avatar.png"}},"url":"https://tansir23.github.io/p/c7179b88.html","keywords":"Tech"}</script>
+    <meta name="description" content="如何迁移你的Git工程又能保留提交记录？">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="Project YI 开发 (2)">
-<meta property="og:url" content="https://tansir23.github.io/p/1289e9c0.html">
+<meta property="og:title" content="迁移Git仓库保留提交记录">
+<meta property="og:url" content="https://tansir23.github.io/p/c7179b88.html">
 <meta property="og:site_name" content="TanSir的Blog">
-<meta property="og:description" content="“奇怪的人”">
+<meta property="og:description" content="如何迁移你的Git工程又能保留提交记录？">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-08-05T12:30:00.000Z">
-<meta property="article:modified_time" content="2021-09-26T02:28:19.409Z">
+<meta property="article:published_time" content="2021-08-01T10:30:00.000Z">
+<meta property="article:modified_time" content="2021-09-26T07:27:45.836Z">
 <meta property="article:author" content="TanSir">
-<meta property="article:tag" content="Game">
+<meta property="article:tag" content="Tech">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@tansir23">
     
@@ -34,9 +34,6 @@
     
         <meta property="og:image" content="https://tansir23.github.io/assets/images/blog_avatar.png"/>
     
-    
-        <meta property="og:image" content="https://z3.ax1x.com/2021/08/23/hPFxYj.md.png"/>
-        <meta class="swiftype" name="image" data-type="enum" content="https://z3.ax1x.com/2021/08/23/hPFxYj.md.png"/>
     
     
     
@@ -229,20 +226,20 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title">
-            Project YI 开发 (2)
+            迁移Git仓库保留提交记录
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2021-08-05T20:30:00+08:00">
+    <time datetime="2021-08-01T18:30:00+08:00">
 	
-		    Aug 05, 2021
+		    Aug 01, 2021
     	
     </time>
     
         <span>in </span>
         
-    <a class="category-link" href="/categories/Game/">Game</a>
+    <a class="category-link" href="/categories/Tech/">Tech</a>
 
 
     
@@ -254,16 +251,15 @@
     
     <div class="post-content markdown">
         <div class="main-content-wrap">
-            <p>“奇怪的人”</p>
+            <p>如何迁移你的Git工程又能保留提交记录？</p>
 <span id="more"></span>
 
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
-src="//player.bilibili.com/player.html?aid=720199436&bvid=BV1rQ4y1h7p3&cid=399523666&page=1" scrolling="no" border="0" 
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;"> </iframe></div>
-
-<h3 id="奇怪的人"><a href="#奇怪的人" class="headerlink" title="奇怪的人"></a>奇怪的人</h3><p>得益于Sencer的惊人表现，同时也得益于它烂大街的广告，人们可以从中获得从未有过的“真实”体验。在这个时代，人人都能轻易进入虚拟世界，如同家常便饭，显然那曾经被称为手机的设备已经满足不了人们。<br>Sencer的出现改变了世界，这是设计者梦寐以求的结果，但他们也早已忘记了创造Sencer的初衷，大胆猜想的话，或许设计者早已被替代，谁呢？而被这个设备洗礼过的人们再也不想脱下这个让人上瘾的面具头盔，只是单纯觉得，戴上这个设备的感觉，真好啊。</p>
-
+<h3 id="为什么要迁移？"><a href="#为什么要迁移？" class="headerlink" title="为什么要迁移？"></a>为什么要迁移？</h3><p>要不是Gitee有容量限制，以及GC存储库的完全看到时间尽头，也不会折腾这事。但后来想想，随着工程日益剧增的体积，给工程找个新家是个迟早的事，所以赶紧行动起来吧。</p>
+<h3 id="New-House方案"><a href="#New-House方案" class="headerlink" title="New House方案"></a>New House方案</h3><p>Gitlab需要部署在Ubuntu上先放弃了，采用了能够在Windows上部署并且简便易用的<font size=5>Gitblit</font>，由于安装使用简单就不详述。</p>
+<h3 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h3><p>着重记录下如何迁移，上命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git clone A                  // 拉取A仓库的代码到本地</span><br><span class="line">cd AA(文件夹名称)            // 进入代码仓库</span><br><span class="line">git branch -r                // 查看远程存储库的根节点名称（一般都是origin）</span><br><span class="line">git remote set-url origin B  // 将本地的远程仓库的地址设置为B</span><br><span class="line">git push --mirror            // 将已经修改远程仓库地址的代码，以镜像的方式推到远程B</span><br></pre></td></tr></table></figure>
+<p>done 此时原有的A本地的代码仓库已经变成了B的本地代码仓库，以后提交会直接提交至B</p>
+<h3 id="Over"><a href="#Over" class="headerlink" title="Over"></a>Over</h3>
             
 
 
@@ -274,7 +270,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-none-link" href="/tags/Game/" rel="tag">Game</a>
+    <a class="tag tag--primary tag--small t-none-link" href="/tags/Tech/" rel="tag">Tech</a>
 
             </div>
         
@@ -287,9 +283,9 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/p/b92d881.html"
-                    data-tooltip="Project YI 开发 (3)"
-                    aria-label="PREVIOUS: Project YI 开发 (3)"
+                    href="/p/39a4ba03.html"
+                    data-tooltip="Project YI 开发 (1)"
+                    aria-label="PREVIOUS: Project YI 开发 (1)"
                 >
                     
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -301,9 +297,9 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/p/39a4ba03.html"
-                    data-tooltip="Project YI 开发 (1)"
-                    aria-label="NEXT: Project YI 开发 (1)"
+                    href="/p/d55671c5.html"
+                    data-tooltip="碎片人生 Life In Pieces"
+                    aria-label="NEXT: 碎片人生 Life In Pieces"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
@@ -328,7 +324,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://tansir23.github.io/p/1289e9c0.html"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://tansir23.github.io/p/c7179b88.html"
                     title="Share on Twitter"
                     aria-label="Share on Twitter"
                 >
@@ -341,7 +337,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://tansir23.github.io/p/1289e9c0.html"
+                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://tansir23.github.io/p/c7179b88.html"
                     title="Share on Weibo"
                     aria-label="Share on Weibo"
                 >
@@ -354,7 +350,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://tansir23.github.io/p/1289e9c0.html&amp;title=Project YI 开发 (2)"
+                    target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://tansir23.github.io/p/c7179b88.html&amp;title=迁移Git仓库保留提交记录"
                     title="Share on QQ"
                     aria-label="Share on QQ"
                 >
@@ -403,9 +399,9 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/p/b92d881.html"
-                    data-tooltip="Project YI 开发 (3)"
-                    aria-label="PREVIOUS: Project YI 开发 (3)"
+                    href="/p/39a4ba03.html"
+                    data-tooltip="Project YI 开发 (1)"
+                    aria-label="PREVIOUS: Project YI 开发 (1)"
                 >
                     
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -417,9 +413,9 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/p/39a4ba03.html"
-                    data-tooltip="Project YI 开发 (1)"
-                    aria-label="NEXT: Project YI 开发 (1)"
+                    href="/p/d55671c5.html"
+                    data-tooltip="碎片人生 Life In Pieces"
+                    aria-label="NEXT: 碎片人生 Life In Pieces"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
@@ -444,7 +440,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://tansir23.github.io/p/1289e9c0.html"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://tansir23.github.io/p/c7179b88.html"
                     title="Share on Twitter"
                     aria-label="Share on Twitter"
                 >
@@ -457,7 +453,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://tansir23.github.io/p/1289e9c0.html"
+                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://tansir23.github.io/p/c7179b88.html"
                     title="Share on Weibo"
                     aria-label="Share on Weibo"
                 >
@@ -470,7 +466,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://tansir23.github.io/p/1289e9c0.html&amp;title=Project YI 开发 (2)"
+                    target="new" href="http://connect.qq.com/widget/shareqq/index.html?url=https://tansir23.github.io/p/c7179b88.html&amp;title=迁移Git仓库保留提交记录"
                     title="Share on QQ"
                     aria-label="Share on QQ"
                 >
@@ -504,7 +500,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=https://tansir23.github.io/p/1289e9c0.html"
+                        href="https://twitter.com/intent/tweet?text=https://tansir23.github.io/p/c7179b88.html"
                         aria-label="Share on Twitter"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
@@ -517,7 +513,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="http://service.weibo.com/share/share.php?&amp;title=https://tansir23.github.io/p/1289e9c0.html"
+                        href="http://service.weibo.com/share/share.php?&amp;title=https://tansir23.github.io/p/c7179b88.html"
                         aria-label="Share on Weibo"
                     >
                         <i class="fab fa-weibo" aria-hidden="true"></i><span>Share on Weibo</span>
@@ -530,7 +526,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="http://connect.qq.com/widget/shareqq/index.html?url=https://tansir23.github.io/p/1289e9c0.html&amp;title=Project YI 开发 (2)"
+                        href="http://connect.qq.com/widget/shareqq/index.html?url=https://tansir23.github.io/p/c7179b88.html&amp;title=迁移Git仓库保留提交记录"
                         aria-label="Share on QQ"
                     >
                         <i class="fab fa-qq" aria-hidden="true"></i><span>Share on QQ</span>
