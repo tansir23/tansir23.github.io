@@ -13,7 +13,7 @@
         <link rel="icon" href="https://tansir23.github.io/assets/images/blog_avatar.png">
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"TanSir","sameAs":["https://www.twitter.com/XyiGameStudio","https://space.bilibili.com/521783607"],"image":"blog_avatar.png"},"articleBody":"如何迁移你的Git工程又能保留提交记录？\n\n\n为什么要迁移？要不是Gitee有容量限制，以及GC存储库的完全看不到时间尽头，我也不会折腾这事。但后来想想，随着工程日益剧增的体积，给工程找个新家是个迟早的事，所以赶紧行动吧。\nNew House方案Gitlab需要部署在Ubuntu上先放弃了，采用了能够在Windows上部署并且简便易用的Gitblit，由于安装使用简单就不详述。\n迁移着重记录下如何迁移，上命令：\n12345git clone A                  // 拉取A仓库的代码到本地cd AA(文件夹名称)            // 进入代码仓库git branch -r                // 查看远程存储库的根节点名称（一般都是origin）git remote set-url origin B  // 将本地的远程仓库的地址设置为Bgit push --mirror            // 将已经修改远程仓库地址的代码，以镜像的方式推到远程B\ndone 此时原有的A本地的代码仓库已经变成了B的本地代码仓库，以后提交会直接提交至B\nOver","dateCreated":"2021-08-01T18:30:00+08:00","dateModified":"2022-02-08T10:55:59+08:00","datePublished":"2021-08-01T18:30:00+08:00","description":"如何迁移你的Git工程又能保留提交记录？","headline":"迁移Git仓库保留提交记录","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://tansir23.github.io/p/c7179b88.html"},"publisher":{"@type":"Organization","name":"TanSir","sameAs":["https://www.twitter.com/XyiGameStudio","https://space.bilibili.com/521783607"],"image":"blog_avatar.png","logo":{"@type":"ImageObject","url":"blog_avatar.png"}},"url":"https://tansir23.github.io/p/c7179b88.html","keywords":"Tech"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"TanSir","sameAs":["https://www.twitter.com/XyiGameStudio","https://space.bilibili.com/521783607","mailto:AshLightyear@outlook.com"],"image":"blog_avatar.png"},"articleBody":"如何迁移你的Git工程又能保留提交记录？\n\n\n为什么要迁移？要不是Gitee有容量限制，以及GC存储库的完全看不到时间尽头，我也不会折腾这事。但后来想想，随着工程日益剧增的体积，给工程找个新家是个迟早的事，所以赶紧行动吧。\nNew House方案Gitlab需要部署在Ubuntu上先放弃了，采用了能够在Windows上部署并且简便易用的Gitblit，由于安装使用简单就不详述。\n迁移着重记录下如何迁移，上命令：\n12345git clone A                  // 拉取A仓库的代码到本地cd AA(文件夹名称)            // 进入代码仓库git branch -r                // 查看远程存储库的根节点名称（一般都是origin）git remote set-url origin B  // 将本地的远程仓库的地址设置为Bgit push --mirror            // 将已经修改远程仓库地址的代码，以镜像的方式推到远程B\ndone 此时原有的A本地的代码仓库已经变成了B的本地代码仓库，以后提交会直接提交至B\nOver","dateCreated":"2021-08-01T18:30:00+08:00","dateModified":"2022-02-08T10:55:59+08:00","datePublished":"2021-08-01T18:30:00+08:00","description":"如何迁移你的Git工程又能保留提交记录？","headline":"迁移Git仓库保留提交记录","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://tansir23.github.io/p/c7179b88.html"},"publisher":{"@type":"Organization","name":"TanSir","sameAs":["https://www.twitter.com/XyiGameStudio","https://space.bilibili.com/521783607","mailto:AshLightyear@outlook.com"],"image":"blog_avatar.png","logo":{"@type":"ImageObject","url":"blog_avatar.png"}},"url":"https://tansir23.github.io/p/c7179b88.html","keywords":"Tech"}</script>
     <meta name="description" content="如何迁移你的Git工程又能保留提交记录？">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="迁移Git仓库保留提交记录">
@@ -190,6 +190,22 @@
                         >
                         <i class="sidebar-button-icon fab fa-bilibili" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Bilibili</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="mailto:AshLightyear@outlook.com"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="Mail"
+                        >
+                        <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Mail</span>
                     </a>
             </li>
             
